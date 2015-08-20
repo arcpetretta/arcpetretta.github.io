@@ -51,15 +51,20 @@
 <div class = "blog-body">
 <p>
 So I'm going to cover the idea of cycling over an array.  The concept is pretty straight forward. .cycle will allow you to cycle through the values of an array over and over indefinitely or for a predefined amount of times.
-
+</p>
+<p>
 Here's an example.
-
+</p>
+<p>
 a = ["a", "b", "c"]
-
+</p>
+<p>
 a.cycle { |x| puts x }  ==> print, a, b, c, a, b, c,.. forever.
-
+</p>
+<p>
 a.cycle(2) { |x| puts x }  ==> print, a, b, c, a, b, c.
-
+</p>
+<p>
 It's all very easy.  I can't of many instances off the top of my head that I would use this type of method.  You could perhaps use it to generate a calendar and list the days of the week in your array times 52 for a yearly calendar. Or you could use it to be a troll and crash someone's program / computer if you created an endless loop.
 </p>
 </div>
