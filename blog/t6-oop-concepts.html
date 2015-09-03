@@ -9,7 +9,7 @@
 <main>
 
 <section class = "titlehome">
-    <section class = "Title">Arrays vs Hashes</section>
+    <section class = "Title">Variable Scope</section>
     <a href = "https://arcpetretta.github.io"><img class = "Home" src = "../imgs/TBD_Logo.jpg" alt = "logo"/></a>
  </section>
 
@@ -46,26 +46,45 @@
     <li class = "post"><a>11</a></li>
     <li class = "post"><a>12</a></li>
   </section>
+
+
 <div class = "blog-body">
-<p> 
-  Arrays and Hashes are unique from eachother.  At their core they are different kinds of data structures that are used to store information.
-</p>
-<p> 
-  An array specifically is an ordered list of items. ex: array = [Lions,Tigers, Bears].  Arrays can call on indexed items by using integer values (numbers). The beauty of this is that arrays allow us to store multiple pieces of information in one variable rather than placing them in several independent variables. When performing a search in an array, your computer will move methodically through each element one by one. Depending on the situation it may be very appropriate to keep and store data in this manner.
+<p>
+Ruby supports 5 differnet variable scopes. They are arranged in a hierarchy of sorts.  If you arrange them from least powerful to most powerful they would go in the following order: local, instance, class, global and constant variables.
 </p>
 <p>
-  The way I see it, it's perfectly appropriate to store data in an array so as long as you can remember the order of the elements and the overall content stored in the array. If not then it may not be the best data structure to use.
+Local Variables: 
+</br>
+</br>
+Local variables are normal variables... An example would be x = 10.  They always begin with a lowercase letter and does not have a nil value before initialization. The best time to use these would be when you want to set the value of variable only one time in a specific spot.  If you'd like to give the variable larger scope it would be better to use a different kind of variable.
+</p>
+
+<p>
+Instance Variables:
+</br>
+</br>
+Instance variables begin with an @ symbol in front of the variable's name.  These are usually used with classes.  The most appropriate time to use this kind of variable would be when you want each instance of the class to have a different or seperate value. Ex: @nba_team.name = Knicks.
 </p>
 <p>
-  The other data structure I've learned about this week is hash.  Hashes are similar to arrays in the sense that they are another type of data structure but that is where the comparison stops.
+Class Variables:
+</br>
+</br>
+Class variables are set with @@ symbols in front of the variables name.  They work the same as instance variables accept they have the same value over all instances of the object. Ex: @@nba_team.name = Knicks.
 </p>
 <p>
-  "A hash is a data structure that stores items by associated keys." In essence, a hash will allow us to store data with an associated keyword which can be very useful if you would like to categorize your data.
+Global variables:
+</br>
+</br>
+ Global variables use a $ symbol in front of the variable's name. Global variables are accessible everywhere! example: $GLOBAL_VARIABLE
 </p>
-<p> In the end both data structures are useful but it's important to consider when it's most appropriate to do so. If you can easily categorize your data then it may best best to use a hash. If the order in which your data is presented is important then use an array. Use the right tool (datastructure) for the job!
+<p>
+Constant variables:
+</br>
+</br>
+Constants always start with a capital letter.  However, they are typically written in ALL CAPS. Constants counter-intuitively can have their values changed.  Ruby will usually warn you before you change it.
 </p>
+
 </div>
-  </section>
 
 
 
