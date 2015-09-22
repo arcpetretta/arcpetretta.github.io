@@ -1,42 +1,47 @@
 html {
-	background-color: grey;
+	background-image: url("http://www.pic4pk.com/wp-content/uploads/2015/06/fire-abstract-HD-wallpaper.jpg");
 }
 
 .tagline{
-	color:cyan;
-	background-color: blue;
+	color:blue;
+	background-color: red;
 	width: 350px;
 	height: 60px;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 22px;
+	font-family: Lobster;
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-bottom: 25px;
+	padding-top: ;
+	padding-bottom: 2%;
+	margin-bottom: 12px;
 	position: relative;
 	left: 257%;
-	font-family: Lobster;
+	border-radius: 10px;
+	opacity: 0.6;
 }
 
 .Logo {
 	height: 0px;
 	width: 100px;
+	border-radius: 10px;
 	}
 
 .lineup{
 	display: inline-block;
 	position: relative;
-
+	border-radius: 10px;
 }
 
 .type{
 	height: 350px;
 	width: 800px;
-	background-color: green;
-	color: black;
+	background-color: #47A3FF;
+	color: white;
 	position: absolute;
-	overflow: scroll;
+	border-radius: 10px;
 	font-family: 'Slabo 27px', serif;
+	opacity: 0.6;
+	overflow: scroll;
 }
 
 .MyPicture {
@@ -60,6 +65,8 @@ html {
 	margin-right: 15px;
 	left: 180%;
 	font-family: Lobster;
+	border-radius: 10px;
+	opacity: 0.6;
 }
 
 .Contact {
@@ -74,6 +81,8 @@ html {
 	margin-right: 180px;
 	left: 180%;
 	font-family: Lobster;
+	border-radius: 10px;
+	opacity: 0.6;
 }
 
 .footer{
@@ -95,4 +104,5 @@ html {
 	border-top: solid black;
 	border-bottom: solid black;
 	font-family: Lobster;
+	border-radius: 10%;
 }
