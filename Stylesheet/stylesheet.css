@@ -3,7 +3,7 @@ html {
 }
 
 .tagline{
-	color:cyan;
+	color:blue;
 	background-color: red;
 	width: 350px;
 	height: 60px;
@@ -181,7 +181,6 @@ html {
 .blog-body{
 	height: 410px;
 	width: 990px;
-	background-color: green;
 	font-size: 12pt;
 	float: left;
 	margin-left: 4%;
