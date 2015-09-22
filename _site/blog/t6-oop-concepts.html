@@ -1,18 +1,15 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>My Blog</title>
   <meta charset="UTF-8">
-  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../Stylesheet/stylesheet.css">
 </head>
 
 <main>
 
 <section class = "titlehome">
-    <section class = "Title">Values</section>
+    <section class = "Title">Variable Scope</section>
     <a href = "https://arcpetretta.github.io"><img class = "Home" src = "../imgs/TBD_Logo.jpg" alt = "logo"/></a>
  </section>
 
@@ -56,31 +53,40 @@
 
 <div class = "blog-body">
 <p>
-During my life I've tried to stay true to these values and traits:
+Ruby supports 5 differnet variable scopes. They are arranged in a hierarchy of sorts.  If you arrange them from least powerful to most powerful they would go in the following order: local, instance, class, global and constant variables.
 </p>
-<ul>
-  <li>Activism</li>
-  <li>Cooleness Under Fire</li>
-  <li>Efficiency</li>
-  <li>Helping Others</li>
-  <li>Economic Security</li>
-  <li>Free Time</li>
-</ul>
 <p>
-In general, I try to live up to these values:
+Local Variables: 
 </br>
-Disagree 1 ----- 2 ----- 3 ----- [ 4 ] ----- 5 Agree
 </br>
+Local variables are normal variables... An example would be x = 10.  They always begin with a lowercase letter and does not have a nil value before initialization. The best time to use these would be when you want to set the value of variable only one time in a specific spot.  If you'd like to give the variable larger scope it would be better to use a different kind of variable.
+</p>
+
+<p>
+Instance Variables:
+</br>
+</br>
+Instance variables begin with an @ symbol in front of the variable's name.  These are usually used with classes.  The most appropriate time to use this kind of variable would be when you want each instance of the class to have a different or seperate value. Ex: @nba_team.name = Knicks.
 </p>
 <p>
-If I had to pick one of these values that I thought was most important to me I think it would have to be "Coolness Under Pressure."  I feel like this is such an underrated trait to have. I think the reason this resonates with me so much is because I remember reading a book by Lee Iacocca years ago about leadership. In the book he discusses the different "C's" of leadership and mentions that the biggest one is "Crisis." He goes on to say how that it's in times of crisis that we show our true character.  I've always felt that being cool under pressure is what seperates the men from the boys.  The ability to react with your head and not your heart in some situations will come in handy more often than you realize.
+Class Variables:
+</br>
+</br>
+Class variables are set with @@ symbols in front of the variables name.  They work the same as instance variables accept they have the same value over all instances of the object. Ex: @@nba_team.name = Knicks.
 </p>
 <p>
-The last topic that someone asked me for advice about was relationship advice funnily enough... I don't think that has anything to do with the values I listed above.  I suppose that you could make the stretch and say it's related to free time but I feel like that's kind of a stretch.
+Global variables:
+</br>
+</br>
+ Global variables use a $ symbol in front of the variable's name. Global variables are accessible everywhere! example: $GLOBAL_VARIABLE
 </p>
 <p>
-I feel pretty proud when I think about my values.  I think these are all traits/things that will help me feel good about myself should I be able to exemplify them in my daily life.  I don't know if it can help me mediate stereotype threat since I'm not sure that I feel that threat often. But I'm sure that being cool under pressure would allow me to realize the situation as it develops and react accordingly.
+Constant variables:
+</br>
+</br>
+Constants always start with a capital letter.  However, they are typically written in ALL CAPS. Constants counter-intuitively can have their values changed.  Ruby will usually warn you before you change it.
 </p>
+
 </div>
 
 
@@ -91,8 +97,8 @@ I feel pretty proud when I think about my values.  I think these are all traits/
   <a href="https://www.facebook.com/arcangelo.petretta"><img src= "../imgs/Facebook.png" alt="Facebook" style="width:42px;height:42px;border:0"></a>
 
   <a href="https://www.linkedin.com/in/arcangelopetretta"><img src= "../imgs/LinkedIn.png" alt="LinkedIn" style="width:42px;height:42px;border:0"></a>
-</footer>
 
+</footer>
 
 </main>
 </html>

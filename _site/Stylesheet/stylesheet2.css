@@ -15,7 +15,6 @@ html {
 	margin-bottom: 25px;
 	position: relative;
 	left: 257%;
-	font-family: Lobster;
 }
 
 .Logo {
@@ -36,7 +35,7 @@ html {
 	color: black;
 	position: absolute;
 	overflow: scroll;
-	font-family: 'Slabo 27px', serif;
+	
 }
 
 .MyPicture {
@@ -59,7 +58,7 @@ html {
 	padding-bottom: 10px;
 	margin-right: 15px;
 	left: 180%;
-	font-family: Lobster;
+
 }
 
 .Contact {
@@ -73,7 +72,6 @@ html {
 	padding-bottom: 10px;
 	margin-right: 180px;
 	left: 180%;
-	font-family: Lobster;
 }
 
 .footer{
@@ -94,5 +92,4 @@ html {
 	font-size: 22pt;
 	border-top: solid black;
 	border-bottom: solid black;
-	font-family: Lobster;
 }
